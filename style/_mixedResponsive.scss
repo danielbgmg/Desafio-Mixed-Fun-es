@@ -1,0 +1,17 @@
+@mixin responsive-grid() {
+    @media(max-width: 768px) {
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        section div {
+            width: 100%;
+        }
+    }
+    @media (max-width: 426px){
+        section {
+            grid-template-columns: 1fr;
+        }
+    }
+}
