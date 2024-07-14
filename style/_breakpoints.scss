@@ -1,11 +1,19 @@
 @mixin smallView {
   @media screen and (max-width: 400px) {
-    @content;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
 @mixin mediumView {
   @media screen and (max-width: 678px) {
-    @content;
+    flex-wrap: wrap;
+    // @content;
+  }
+}
+
+@mixin divSmallView {
+  @media screen and (max-width: 400px) {
+    width: 100%;
   }
 }

@@ -13,37 +13,47 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   background-color: #1E1E1E;
   padding: 10px 0;
   color: #00BFA6;
 }
 
-section {
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 200px;
+  gap: 10px;
+  padding: 40px 10px;
   margin: 100px 20px;
   border-radius: 20px;
   background-color: white;
 }
 @media screen and (max-width: 400px) {
-  section {
-    flex-direction: column;
-    height: 400px;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 678px) {
-  section {
+  .container {
     flex-wrap: wrap;
   }
 }
-section div {
+.container .grid-item {
+  width: 25%;
+  text-align: center;
   background-color: rgb(0, 153, 153);
   padding: 20px 30px;
   border-radius: 20px;
   color: white;
+  flex-grow: 1;
+}
+@media screen and (max-width: 400px) {
+  .container .grid-item {
+    width: 100%;
+  }
 }
 
 footer {
@@ -51,5 +61,6 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   color: white;
 }/*# sourceMappingURL=style.css.map */
