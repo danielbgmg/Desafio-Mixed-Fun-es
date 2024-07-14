@@ -30,14 +30,12 @@ section {
 }
 @media screen and (max-width: 400px) {
   section {
-    display: flex;
     flex-direction: column;
     height: 400px;
   }
 }
 @media screen and (max-width: 678px) {
   section {
-    display: flex;
     flex-wrap: wrap;
   }
 }
